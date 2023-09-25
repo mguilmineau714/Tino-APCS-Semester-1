@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=P3_Guilmineau_Marcely_Illusion
+comment0.text=\r\n\ \ \ \ Name\:\ \ \ \ \ \ \ Marcely\ Guilmineau\r\n\ \ \ \ Date\:\ \ \ \ \ \ \ 09/15/2023\r\n\ \ \ \ Period\:\ \ \ \ \ 3\r\n\r\n\ \ \ \ Is\ this\ lab\ fully\ working?\ \ (Yes)\r\n\ \ \ \ If\ not,\ explain\:\r\n\ \ \ \ If\ resubmitting,\ explain\:\r\n
+comment1.params=
+comment1.target=void\ draw()
+comment2.params=rectNum\ startY\ color
+comment2.target=void\ drawRowOfRects(int,\ int,\ java.awt.Color)
+comment2.text=\r\n\ Draws\ a\ row\ of\ rectangles\ with\ a\ set\ color\r\n\ @param\ rectNum\ \ \ \ The\ number\ of\ rectangles\ to\ draw\ in\ the\ row.\r\n\ @param\ startY\ \ \ \ \ The\ starting\ Y-coordinate\ of\ the\ row.\r\n\ @param\ color\ \ \ \ \ \ The\ color\ to\ fill\ the\ rectangles\ with.\r\n
+comment3.params=centerX\ centerY\ radius\ focalPointX\ focalPointY\ color\ focalPointColor
+comment3.target=void\ drawSphere(double,\ double,\ double,\ double,\ double,\ java.awt.Color,\ java.awt.Color)
+comment3.text=\r\n\ Draws\ a\ sphere\ on\ the\ canvas\ with\ a\ central\ and\ focal\ point\r\n\r\n\ @param\ centerX\ \ \ \ \ \ \ \ \ \ The\ X-coordinate\ of\ the\ center\ of\ the\ sphere.\r\n\ @param\ centerY\ \ \ \ \ \ \ \ \ \ The\ Y-coordinate\ of\ the\ center\ of\ the\ sphere.\r\n\ @param\ radius\ \ \ \ \ \ \ \ \ \ \ The\ initial\ radius\ of\ the\ sphere.\r\n\ @param\ focalPointX\ \ \ \ \ \ The\ X-coordinate\ of\ the\ focal\ point.\r\n\ @param\ focalPointY\ \ \ \ \ \ The\ Y-coordinate\ of\ the\ focal\ point.\r\n\ @param\ color\ \ \ \ \ \ \ \ \ \ \ \ The\ color\ of\ the\ outer\ part\ of\ the\ sphere.\r\n\ @param\ focalPointColor\ \ The\ color\ of\ the\ focal\ point.\r\n
+comment4.params=centerX\ centerY\ radius\ color
+comment4.target=void\ drawCircle(double,\ double,\ double,\ java.awt.Color)
+comment4.text=\r\n\ Draws\ a\ filled\ circle\r\n\r\n\ @param\ centerX\ \ The\ X-coordinate\ of\ the\ center\ of\ the\ circle.\r\n\ @param\ centerY\ \ The\ Y-coordinate\ of\ the\ center\ of\ the\ circle.\r\n\ @param\ radius\ \ \ The\ radius\ of\ the\ circle.\r\n\ @param\ color\ \ \ \ The\ color\ to\ fill\ the\ circle\ with.\r\n
+comment5.params=rectX\ rectY\ rectLength\ rectHeight\ color
+comment5.target=void\ drawRectangle(double,\ double,\ double,\ double,\ java.awt.Color)
+comment5.text=\r\n\ Draws\ a\ filled\ rectangle\r\n\r\n\ @param\ rectX\ \ \ \ \ \ The\ X-coordinate\ of\ the\ top-left\ corner\ of\ the\ rectangle.\r\n\ @param\ rectY\ \ \ \ \ \ The\ Y-coordinate\ of\ the\ top-left\ corner\ of\ the\ rectangle.\r\n\ @param\ rectLength\ The\ length\ (width)\ of\ the\ rectangle.\r\n\ @param\ rectHeight\ The\ height\ of\ the\ rectangle.\r\n\ @param\ color\ \ \ \ \ \ The\ color\ to\ fill\ the\ rectangle\ with.\r\n
+numComments=6

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Java_Integral_Calculator
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=sumType\ subIntervals\ lowerBound\ upperBound\ function\ makeGraph
+comment2.target=double\ RAMSum(java.lang.String,\ double,\ double,\ double,\ Java_Integral_Calculator.MathFunction,\ java.lang.Boolean)
+comment3.params=rectX\ rectY\ rectLength\ rectHeight\ color
+comment3.target=void\ drawRectangle(double,\ double,\ double,\ double,\ java.awt.Color)
+comment4.params=rectCenterX\ rectCenterY\ rectWidth\ rectHeight\ outlineColor
+comment4.target=void\ drawRectOutline(double,\ double,\ double,\ double,\ java.awt.Color)
+numComments=5

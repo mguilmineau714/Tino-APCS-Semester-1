@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=P3_Guilmineau_Marcely_Outline
+comment0.text=\r\n\ This\ class\ represents\ a\ rectangle\ outline.\ \r\n\ It\ allows\ you\ to\ draw\ a\ rectangle\ outline\ centered\ at\ a\ selected\ point\ that\ has\ a\ width,\ height,\ and\ outline\ color.\r\n\ You\ can\ customize\ the\ rectangle's\ attributes\ and\ draw\ it\ using\ the\ draw()\ method.\r\n\ @author\ P3_Guilmineau_Marcely\r\n\ @version\ 1.0\r\n
+comment1.params=paper\ rectCenterX\ rectCenterY
+comment1.target=P3_Guilmineau_Marcely_Outline(gpdraw.SketchPad,\ int,\ int)
+comment1.text=\r\n\ Constructs\ a\ P3_Guilmineau_Marcely_Outline\ object\ with\ a\ default\ outline\ size\ and\ color.\r\n\r\n\ @param\ paper\ \ \ \ \ \ \ \ \ The\ SketchPad\ where\ the\ outline\ is\ being\ drawn\r\n\ @param\ rectCenterX\ \ \ The\ X-coordinate\ of\ the\ center\ of\ the\ outline\r\n\ @param\ rectCenterY\ \ \ The\ Y-coordinate\ of\ the\ center\ of\ the\ outline\r\n
+comment2.params=paper\ rectCenterX\ rectCenterY\ rectWidth\ rectHeight\ outlineColor
+comment2.target=P3_Guilmineau_Marcely_Outline(gpdraw.SketchPad,\ int,\ int,\ int,\ int,\ java.awt.Color)
+comment2.text=\r\n\ Constructs\ a\ P3_Guilmineau_Marcely_Outline\ object\ with\ custom\ attributes.\r\n\r\n\ @param\ paper\ \ \ \ \ \ \ \ \ The\ SketchPad\ where\ the\ outline\ is\ being\ drawn\r\n\ @param\ rectCenterX\ \ \ The\ X-coordinate\ of\ the\ center\ of\ the\ outline\r\n\ @param\ rectCenterY\ \ \ The\ Y-coordinate\ of\ the\ center\ of\ the\ outline\r\n\ @param\ rectWidth\ \ \ \ \ The\ width\ of\ the\ outline\r\n\ @param\ rectHeight\ \ \ \ The\ height\ of\ the\ outline\r\n\ @param\ outlineColor\ \ The\ color\ of\ the\ outline\r\n
+comment3.params=
+comment3.target=void\ draw()
+comment3.text=\r\n\ Draws\ the\ outline\ on\ the\ SketchPad\r\n
+numComments=4

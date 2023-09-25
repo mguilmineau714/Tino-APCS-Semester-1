@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=P3_Guilmineau_Marcely_Cloud
+comment0.text=\r\n\ This\ class\ represents\ a\ Cloud\ made\ up\ of\ 3\ circles.\r\n\ It\ allows\ you\ to\ draw\ a\ Cloud\ with\ a\ specificied\ base\ radius\ and\ select\ an\ x\ and\ y\ where\ the\ first\ tile\ is\ centered.\r\n\ You\ can\ customize\ the\ Cloud's\ attributes\ and\ draw\ it\ using\ the\ draw()\ method.\r\n\r\n\ @author\ P3_Guilmineau_Marcely\r\n\ @version\ 1.0\r\n
+comment1.params=paper\ centerX\ centerY
+comment1.target=P3_Guilmineau_Marcely_Cloud(gpdraw.SketchPad,\ int,\ int)
+comment1.text=\r\n\ Constructs\ a\ P3_Guilmineau_Marcely_Cloud\ object\ with\ default\ values.\r\n\r\n\ @param\ paper\ \ \ The\ SketchPad\ where\ the\ Cloud\ is\ being\ drawn.\r\n\ @param\ X\ \ \ \ \ \ \ The\ X-coordinate\ of\ the\ center\ of\ the\ Cloud\ (all\ tiles\ are\ centered\ here).\r\n\ @param\ startY\ \ The\ Y-coordinate\ of\ the\ center\ of\ the\ Cloud's\ first\ tile.\r\n
+comment2.params=paper\ centerX\ centerY\ radius\ CloudColor
+comment2.target=P3_Guilmineau_Marcely_Cloud(gpdraw.SketchPad,\ int,\ int,\ int,\ java.awt.Color)
+comment2.text=\r\n\ Constructs\ a\ P3_Guilmineau_Marcely_Cloud\ object\ with\ custom\ attributes.\r\n\r\n\ @param\ paper\ \ \ \ \ \ \ \ The\ SketchPad\ where\ the\ Cloud\ is\ being\ drawn.\r\n\ @param\ centerX\ \ \ \ \ \ \ \ \ \ \ \ The\ X-coordinate\ of\ the\ center\ of\ the\ Cloud.\r\n\ @param\ centerY\ \ \ \ \ \ \ The\ Y-coordinate\ of\ the\ center\ of\ the\ Cloud\ tile.\r\n\ @param\ radius\ \ \ \ \ \ \ The\ height\ of\ the\ center\ cloud.\r\n\ @param\ CloudColor\ \ \ The\ color\ of\ the\ cloud.\r\n
+comment3.params=
+comment3.target=void\ draw()
+comment3.text=\r\n\ Draws\ the\ Cloud\ with\ the\ specified\ number\ of\ tiles\ and\ attributes.\r\n
+comment4.params=centerX\ centerY\ radius\ color
+comment4.target=void\ drawCircle(int,\ int,\ int,\ java.awt.Color)
+comment4.text=\r\n\ Draws\ a\ colored\ circle\ on\ the\ SketchPad\ that's\ part\ of\ a\ cloud.\r\n\r\n\ @param\ centerX\ \ \ \ \ \ \ The\ X-coordinate\ of\ the\ center\ of\ the\ circle.\r\n\ @param\ centerY\ \ \ \ \ \ \ The\ Y-coordinate\ of\ the\ center\ of\ the\ circle.\r\n\ @param\ radius\ \ \ \ \ \ \ \ The\ radius\ of\ the\ cloud's\ center\ circle.\r\n\ @param\ color\ \ \ \ \ \ \ \ \ The\ color\ of\ the\ circle.\r\n
+numComments=5

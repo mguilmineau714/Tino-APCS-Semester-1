@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=P3_Guilmineau_Marcely_FirstHouse
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\ TO\ FIX\:\r\n\ \ \ \ -\ Fix\ hardcoded\ values\r\n\ \ \ \ -\ Find\ method\ to\ fill\ in\ the\ 3d\ walls\r\n\ \ \ \ -\ Add\ background\ maybe(?)\r\n\ \ \ \ Final\ concept\:\ https\://cdn.discordapp.com/attachments/736701763729489941/1145602157043793960/image.png\r\n
+comment2.params=x\ y\ radius
+comment2.target=void\ drawDoorknob(int,\ int,\ int)
+numComments=3

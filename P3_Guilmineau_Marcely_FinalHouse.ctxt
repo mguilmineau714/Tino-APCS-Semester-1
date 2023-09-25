@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=P3_Guilmineau_Marcely_FinalHouse
+comment0.text=\r\n\ \ \ \ Name\:\ \ \ \ \ \ \ Marcely\ Guilmineau\r\n\ \ \ \ Date\:\ \ \ \ \ \ \ 09/04/2023\r\n\ \ \ \ Period\:\ \ \ \ \ 3\r\n\r\n\ \ \ \ Is\ this\ lab\ fully\ working?\ \ Yes\r\n\ \ \ \ If\ not,\ explain\:\r\n\ \ \ \ If\ resubmitting,\ explain\:\ \r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=centerX\ centerY\ boxWidth\ boxHeight\ ovalColor
+comment2.target=void\ drawOval(int,\ int,\ int,\ int,\ java.awt.Color)
+comment3.params=rectCenterX\ rectCenterY\ rectWidth\ rectHeight\ outlineColor
+comment3.target=void\ drawRectOutline(int,\ int,\ int,\ int,\ java.awt.Color)
+comment4.params=numTiles\ X\ startY\ startWidth\ startHeight\ roofColor
+comment4.target=void\ drawRoof(int,\ int,\ int,\ int,\ int,\ java.awt.Color)
+comment5.params=startX\ startY\ endX\ endY\ lineColor
+comment5.target=void\ drawLine(int,\ int,\ int,\ int,\ java.awt.Color)
+comment6.params=centerX\ centerY\ radius\ color
+comment6.target=void\ drawCircle(int,\ int,\ int,\ java.awt.Color)
+comment7.params=rectX\ rectY\ rectLength\ rectHeight\ color
+comment7.target=void\ drawRectangle(int,\ int,\ int,\ int,\ java.awt.Color)
+numComments=8

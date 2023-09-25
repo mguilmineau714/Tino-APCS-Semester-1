@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=P3_Guilmineau_Marcely_Roof
+comment0.text=\r\n\ This\ class\ represents\ a\ roof\ made\ up\ of\ tiles\ stacked\ on\ top\ of\ each\ other\r\n\ It\ allows\ you\ to\ draw\ a\ roof\ with\ a\ specified\ number\ of\ tiles,\ a\ tile\ width\ for\ the\ first\ tile,\ a\ tile\ height\ to\ represent\ distance\ between\ tiles,\ and\ select\ an\ x\ and\ y\ where\ the\ first\ tile\ is\ centered.\r\n\ You\ can\ customize\ the\ roof's\ attributes\ and\ draw\ it\ using\ the\ draw()\ method.\r\n\r\n\ @author\ P3_Guilmineau_Marcely\r\n\ @version\ 1.0\r\n
+comment1.params=paper\ X\ startY
+comment1.target=P3_Guilmineau_Marcely_Roof(gpdraw.SketchPad,\ int,\ int)
+comment1.text=\r\n\ Constructs\ a\ P3_Guilmineau_Marcely_Roof\ object\ with\ default\ values.\r\n\r\n\ @param\ paper\ \ \ The\ SketchPad\ where\ the\ roof\ is\ being\ drawn\r\n\ @param\ X\ \ \ \ \ \ \ The\ X-coordinate\ of\ the\ center\ of\ the\ roof\ (all\ tiles\ are\ centered\ here)\r\n\ @param\ startY\ \ The\ Y-coordinate\ of\ the\ center\ of\ the\ roof's\ first\ tile\r\n
+comment2.params=paper\ numTiles\ X\ startY\ startWidth\ startHeight\ roofColor
+comment2.target=P3_Guilmineau_Marcely_Roof(gpdraw.SketchPad,\ int,\ int,\ int,\ int,\ int,\ java.awt.Color)
+comment2.text=\r\n\ Constructs\ a\ P3_Guilmineau_Marcely_Roof\ object\ with\ custom\ attributes.\r\n\r\n\ @param\ paper\ \ \ \ \ \ \ \ The\ SketchPad\ where\ the\ roof\ is\ being\ drawn\r\n\ @param\ numTiles\ \ \ \ \ The\ number\ of\ tiles\ in\ the\ roof\r\n\ @param\ X\ \ \ \ \ \ \ \ \ \ \ \ The\ X-coordinate\ of\ the\ center\ of\ the\ roof\r\n\ @param\ startY\ \ \ \ \ \ \ The\ Y-coordinate\ of\ the\ center\ of\ the\ roof\ tile\r\n\ @param\ startWidth\ \ \ The\ width\ of\ the\ first\ roof\ tile,\ each\ subsequent\ tile\ width\ is\ based\ on\ an\ negative\ increment\ of\ this\ width\r\n\ @param\ startHeight\ \ The\ height\ of\ each\ roof\ tile\r\n\ @param\ roofColor\ \ \ \ The\ color\ of\ the\ roof\r\n
+comment3.params=
+comment3.target=void\ draw()
+comment3.text=\r\n\ Draws\ the\ roof\ with\ the\ specified\ number\ of\ tiles\ and\ attributes.\r\n
+comment4.params=rectX\ rectY\ rectLength\ rectHeight\ color
+comment4.target=void\ drawRectangle(int,\ int,\ int,\ int,\ java.awt.Color)
+comment4.text=\r\n\ Draws\ a\ colored\ rectangle\ on\ the\ SketchPad\ that\ serves\ as\ a\ roof\ tile\r\n\r\n\ @param\ rectX\ \ \ \ \ \ \ The\ X-coordinate\ of\ the\ rectangle's\ starting\ point\ \ \ \ \r\n\ @param\ rectY\ \ \ \ \ \ \ The\ Y-coordinate\ of\ the\ rectangle's\ starting\ point\r\n\ @param\ rectLength\ \ The\ length\ of\ the\ rectangle\r\n\ @param\ rectHeight\ \ The\ height\ of\ the\ rectangle\r\n\ @param\ color\ \ \ \ \ \ \ The\ color\ of\ the\ rectangle\r\n
+numComments=5
