@@ -13,5 +13,5 @@ comment5.target=double\ gramsToAtoms(double,\ double)
 comment6.params=min\ max
 comment6.target=int\ randomN(int,\ int)
 comment7.params=a\ b\ c
-comment7.target=double\ perimeter(double,\ double,\ double)
+comment7.target=double\ perimeter(java.awt.Point,\ java.awt.Point,\ java.awt.Point)
 numComments=8
