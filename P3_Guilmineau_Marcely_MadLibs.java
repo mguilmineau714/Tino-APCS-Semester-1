@@ -23,7 +23,7 @@ public class P3_Guilmineau_Marcely_MadLibs {
   [noun] decided he was ready for the test. He went to the table and quickly ate breakfast, a measly plate of [noun].
   His school, [noun] high school was only [double] miles away. No time to review.
   As he walked into Mrs. [Noun]'s classroom... he saw an announcement. The test was rescheduled for tomorrow! [Noun] was saved.
- */
+  */
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Please enter a name");
