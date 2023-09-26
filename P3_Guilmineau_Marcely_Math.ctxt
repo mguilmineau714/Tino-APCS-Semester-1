@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=P3_Guilmineau_Marcely_Math
+comment1.params=c
+comment1.target=double\ cToF(double)
+comment2.params=f
+comment2.target=double\ fToC(double)
+comment3.params=r
+comment3.target=double\ sphereVolume(double)
+comment4.params=side1\ side2
+comment4.target=double\ hypoteneuse(double,\ double)
+comment5.params=grams\ atomicMass
+comment5.target=double\ gramsToAtoms(double,\ double)
+comment6.params=min\ max
+comment6.target=int\ randomN(int,\ int)
+comment7.params=a\ b\ c
+comment7.target=double\ perimeter(double,\ double,\ double)
+numComments=8
