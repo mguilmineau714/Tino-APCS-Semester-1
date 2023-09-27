@@ -9,8 +9,8 @@ public class P3_Guilmineau_Marcely_MathDriver {
         double temp4 = -15;
         System.out.println(temp1 + "\u00b0" + "C" + " --> " + P3_Guilmineau_Marcely_Math.fToC(temp1) + "\u00b0" + "C");
         System.out.println(temp2 + "\u00b0" + "C" + " --> " + P3_Guilmineau_Marcely_Math.fToC(temp2) + "\u00b0" + "C");
-        System.out.println(temp3 + "\u00b0" + "F" + " --> " + P3_Guilmineau_Marcely_Math.cToF(temp3) + "\u00b0" + "F");
-        System.out.println(temp4 + "\u00b0" + "F" + " --> " + P3_Guilmineau_Marcely_Math.cToF(temp4) + "\u00b0" + "F");
+        System.out.println(temp3 + "\u00b0" + "F" + " --> " + P3_Guilmineau_Marcely_Math.cToF(temp3) + "\u00b0" + "C");
+        System.out.println(temp4 + "\u00b0" + "F" + " --> " + P3_Guilmineau_Marcely_Math.cToF(temp4) + "\u00b0" + "C");
 
         // Spheres
         double rad1 = 1.0;
