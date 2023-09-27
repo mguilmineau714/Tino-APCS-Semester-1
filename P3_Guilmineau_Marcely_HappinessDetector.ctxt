@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=P3_Guilmineau_Marcely_HappinessDetector
+comment0.text=\r\n\ \ \ \ Name\:\ \ \ \ \ \ \ Marcely\ Guilmineau\r\n\ \ \ \ Date\:\ \ \ \ \ \ \ 09/25/2023\r\n\ \ \ \ Period\:\ \ \ \ \ 3\r\n\r\n\ \ \ \ Is\ this\ lab\ fully\ working?\ \ (Yes)\r\n\ \ \ \ If\ not,\ explain\:\r\n\ \ \ \ If\ resubmitting,\ explain\:\r\n
+comment1.params=num\ a\ b
+comment1.target=boolean\ isHappy(int,\ int,\ int)
+numComments=2
