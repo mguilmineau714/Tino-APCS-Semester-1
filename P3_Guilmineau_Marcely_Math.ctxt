@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=P3_Guilmineau_Marcely_Math
-comment0.text=\r\n\ This\ class\ contains\ various\ mathematical\ utility\ methods\ like\ converting\ temp,\ volume\ of\ a\ sphere,\ hypoteneuse\ of\ a\ triangle,\ finding\ atom\ count,\ random\ number\ generator,\ and\ perimeter\ of\ a\ triangle.\r\n\ @author\ P3_Guilmineau_Marcely\r\n
+comment0.text=\r\n\ This\ class\ contains\ various\ mathematical\ utility\ methods\ like\ converting\ temp,\ volume\ of\ a\ sphere,\ hypotenuse\ of\ a\ triangle,\ finding\ atom\ count,\ random\ number\ generator,\ and\ perimeter\ of\ a\ triangle.\r\n\ @author\ P3_Guilmineau_Marcely\r\n
 comment1.params=c
 comment1.target=double\ cToF(double)
 comment1.text=\r\n\ Converts\ a\ temperature\ value\ from\ Celsius\ to\ Fahrenheit.\r\n\r\n\ @param\ c\ The\ temperature\ in\ Celsius.\r\n\ @return\ The\ temperature\ in\ Fahrenheit.\r\n
