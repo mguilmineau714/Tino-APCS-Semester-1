@@ -1,17 +1,25 @@
 #BlueJ class context
 comment0.target=P3_Guilmineau_Marcely_Math
+comment0.text=\r\n\ This\ class\ contains\ various\ mathematical\ utility\ methods\ like\ converting\ temp,\ volume\ of\ a\ sphere,\ hypoteneuse\ of\ a\ triangle,\ finding\ atom\ count,\ random\ number\ generator,\ and\ perimeter\ of\ a\ triangle.\r\n\ @author\ P3_Guilmineau_Marcely\r\n
 comment1.params=c
 comment1.target=double\ cToF(double)
+comment1.text=\r\n\ Converts\ a\ temperature\ value\ from\ Celsius\ to\ Fahrenheit.\r\n\r\n\ @param\ c\ The\ temperature\ in\ Celsius.\r\n\ @return\ The\ temperature\ in\ Fahrenheit.\r\n
 comment2.params=f
 comment2.target=double\ fToC(double)
+comment2.text=\r\n\ Converts\ a\ temperature\ value\ from\ Fahrenheit\ to\ Celsius.\r\n\r\n\ @param\ f\ The\ temperature\ in\ Fahrenheit.\r\n\ @return\ The\ temperature\ in\ Celsius.\r\n
 comment3.params=r
 comment3.target=double\ sphereVolume(double)
+comment3.text=\r\n\ Calculates\ the\ volume\ of\ a\ sphere\ given\ its\ radius.\r\n\r\n\ @param\ r\ The\ radius\ of\ the\ sphere.\r\n\ @return\ The\ volume\ of\ the\ sphere.\r\n
 comment4.params=side1\ side2
-comment4.target=double\ hypoteneuse(double,\ double)
+comment4.target=double\ hypotenuse(double,\ double)
+comment4.text=\r\n\ Calculates\ the\ hypotenuse\ of\ a\ right\ triangle\ given\ the\ lengths\ of\ its\ two\ sides.\r\n\r\n\ @param\ side1\ The\ length\ of\ the\ first\ side.\r\n\ @param\ side2\ The\ length\ of\ the\ second\ side.\r\n\ @return\ The\ length\ of\ the\ hypotenuse.\r\n
 comment5.params=grams\ atomicMass
 comment5.target=double\ gramsToAtoms(double,\ double)
+comment5.text=\r\n\ Converts\ a\ mass\ in\ grams\ to\ the\ number\ of\ atoms,\ given\ the\ atomic\ mass\ of\ the\ substance.\r\n\r\n\ @param\ grams\ \ \ \ \ \ \ The\ mass\ in\ grams.\r\n\ @param\ atomicMass\ \ The\ atomic\ mass\ of\ the\ substance\ in\ atomic\ mass\ units\ (AMU).\r\n\ @return\ The\ number\ of\ atoms\ in\ the\ given\ mass.\r\n
 comment6.params=min\ max
 comment6.target=int\ randomN(int,\ int)
+comment6.text=\r\n\ Generates\ a\ random\ integer\ between\ a\ specified\ minimum\ and\ maximum\ value.\r\n\r\n\ @param\ min\ The\ minimum\ value\ of\ the\ random\ integer.\r\n\ @param\ max\ The\ maximum\ value\ of\ the\ random\ integer.\r\n\ @return\ A\ random\ integer\ within\ the\ specified\ range.\r\n
 comment7.params=a\ b\ c
 comment7.target=double\ perimeter(java.awt.Point,\ java.awt.Point,\ java.awt.Point)
+comment7.text=\r\n\ Calculates\ the\ perimeter\ of\ a\ triangle\ given\ 3\ corner\ points.\r\n\r\n\ @param\ a\ The\ first\ point\ of\ the\ triangle.\r\n\ @param\ b\ The\ second\ point\ of\ the\ triangle.\r\n\ @param\ c\ The\ third\ point\ of\ the\ triangle.\r\n\ @return\ The\ perimeter\ of\ the\ triangle.\r\n
 numComments=8
