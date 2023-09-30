@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=P3_Guilmineau_Marcely_Fibonacci
+comment0.text=\r\n\ \ \ \ Name\:\ \ \ \ \ \ \ Marcely\ Guilmineau\r\n\ \ \ \ Date\:\ \ \ \ \ \ \ 09/24/2023\r\n\ \ \ \ Period\:\ \ \ \ \ 3\r\n\r\n\ \ \ \ Is\ this\ lab\ fully\ working?\ \ (Yes)\r\n\ \ \ \ If\ not,\ explain\:\r\n\ \ \ \ If\ resubmitting,\ explain\:\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=n
+comment2.target=int\ fibonacci(int)
+comment3.params=a\ b
+comment3.target=int\ multiplication(int,\ int)
+comment4.params=a\ b
+comment4.target=int\ trueMultiplication(int,\ int)
+numComments=5
