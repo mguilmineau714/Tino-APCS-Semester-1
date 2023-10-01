@@ -1,10 +1,6 @@
 #BlueJ class context
-comment0.target=P3_Guilmineau_Marcely_Fibonacci
+comment0.target=P3_Guilmineau_Marcely_FibonacciDriver
 comment0.text=\r\n\ \ \ \ Name\:\ \ \ \ \ \ \ Marcely\ Guilmineau\r\n\ \ \ \ Date\:\ \ \ \ \ \ \ 10/1/2023\r\n\ \ \ \ Period\:\ \ \ \ \ 3\r\n\r\n\ \ \ \ Is\ this\ lab\ fully\ working?\ \ (Yes)\r\n\ \ \ \ If\ not,\ explain\:\r\n\ \ \ \ If\ resubmitting,\ explain\:\r\n
-comment1.params=n
-comment1.target=int\ fibonacci(int)
-comment2.params=a\ b
-comment2.target=int\ multiplication(int,\ int)
-comment3.params=a\ b
-comment3.target=int\ trueMultiplication(int,\ int)
-numComments=4
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
