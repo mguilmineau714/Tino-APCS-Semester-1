@@ -1,10 +1,3 @@
-
-/**
- * Write a description of class Checker here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class Checker {
    public static void main(String[] args) {
        Checker checker = new Checker();

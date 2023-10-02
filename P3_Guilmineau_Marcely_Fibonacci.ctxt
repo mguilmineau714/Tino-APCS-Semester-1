@@ -7,4 +7,6 @@ comment2.params=a\ b
 comment2.target=int\ multiplication(int,\ int)
 comment3.params=a\ b
 comment3.target=int\ trueMultiplication(int,\ int)
-numComments=4
+comment4.params=a\ b
+comment4.target=int\ oneLineTrueMultiplication(int,\ int)
+numComments=5

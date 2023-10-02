@@ -24,7 +24,7 @@ public class Java_Integral_Calculator  {
         MathFunction function;
         Boolean makeGraph;
 
-        sumType = "LRAM";
+        sumType = "TRAP";
         subIntervals = 50000;
         lowerBound = -1;
         upperBound = 3;
@@ -81,6 +81,8 @@ public class Java_Integral_Calculator  {
                 }
                 answer += function.apply(i);
             }
+        } else if(sumType.equals("TRAP")){
+            return (RAMSum("LRAM", subIntervals, lowerBound, upperBound, function, false) + RAMSum("RRAM", subIntervals, lowerBound, upperBound, function, false))/2;
         } else {
             throw new IllegalArgumentException("Invalid sumType: " + sumType);
         }
