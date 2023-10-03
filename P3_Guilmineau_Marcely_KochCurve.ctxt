@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=P3_Guilmineau_Marcely_KochCurve
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=level\ length\ pen
+comment2.target=void\ drawKochCurve(int,\ int,\ gpdraw.DrawingTool)
+numComments=3
