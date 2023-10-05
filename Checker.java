@@ -1,10 +1,6 @@
 public class Checker {
    public static void main(String[] args) {
-       Checker checker = new Checker();
-        System.out.println(checker.power_1(3, 3));
-        for(int i = 0; i < 7; i++) {
-            System.out.println(i + " = " +  checker.sequence(i));
-        }
+       System.out.printf("%.3f", "3");
     }
    
 
