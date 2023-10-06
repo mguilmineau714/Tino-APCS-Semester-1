@@ -25,11 +25,11 @@ public class Java_Integral_Calculator  {
         Boolean makeGraph;
 
         sumType = "TRAP";
-        subIntervals = 50000;
-        lowerBound = -1;
-        upperBound = 3;
-        function = x -> Math.pow(x, 2)*Math.pow(Math.E, -x);
-        makeGraph = true;
+        subIntervals = 500000;
+        lowerBound = -0.001;
+        upperBound = 3.020123;
+        function = x -> Math.cos(x);
+        makeGraph = false;
         
         Java_Integral_Calculator integralCalculator = new Java_Integral_Calculator();
 

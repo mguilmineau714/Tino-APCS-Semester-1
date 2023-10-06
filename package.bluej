@@ -32,6 +32,7 @@ dependency8.type=UsesDependency
 dependency9.from=P3_Guilmineau_Marcely_HappinessDetectorDriver
 dependency9.to=P3_Guilmineau_Marcely_HappinessDetector
 dependency9.type=UsesDependency
+<<<<<<< Updated upstream
 editor.fx.0.height=739
 editor.fx.0.width=816
 editor.fx.0.x=552
@@ -42,6 +43,18 @@ package.divider.horizontal=0.6
 package.divider.vertical=0.9061696658097687
 package.editor.height=698
 package.editor.width=1407
+=======
+editor.fx.0.height=737
+editor.fx.0.width=814
+editor.fx.0.x=360
+editor.fx.0.y=42
+objectbench.height=110
+objectbench.width=1511
+package.divider.horizontal=0.6
+package.divider.vertical=0.8481500513874616
+package.editor.height=655
+package.editor.width=1410
+>>>>>>> Stashed changes
 package.editor.x=0
 package.editor.y=0
 package.frame.height=878
@@ -116,6 +129,7 @@ target17.height=30
 target17.name=P3_Guilmineau_Marcely_RectangleDriver
 target17.showInterface=false
 target17.type=ClassTarget
+<<<<<<< Updated upstream
 target17.width=280
 target17.x=370
 target17.y=400
@@ -126,13 +140,31 @@ target18.type=ClassTarget
 target18.width=220
 target18.x=70
 target18.y=280
+=======
+target17.width=220
+target17.x=70
+target17.y=280
+target18.height=30
+target18.name=P3_Guilmineau_Marcely_KochCurveDriver
+target18.showInterface=false
+target18.type=ClassTarget
+target18.width=280
+target18.x=320
+target18.y=600
+>>>>>>> Stashed changes
 target19.height=30
-target19.name=P3_Guilmineau_Marcely_KochCurveDriver
+target19.name=P3_Guilmineau_Marcely_Taxes
 target19.showInterface=false
 target19.type=ClassTarget
+<<<<<<< Updated upstream
 target19.width=280
 target19.x=320
 target19.y=600
+=======
+target19.width=210
+target19.x=70
+target19.y=320
+>>>>>>> Stashed changes
 target2.height=40
 target2.name=P3_Guilmineau_Marcely_MathOps
 target2.showInterface=false

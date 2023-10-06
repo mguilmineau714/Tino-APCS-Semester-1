@@ -11,6 +11,6 @@ import gpdraw.*;
 public class P3_Guilmineau_Marcely_KochCurveDriver {
    public static void main(String[] args) {
        P3_Guilmineau_Marcely_KochCurve koch = new P3_Guilmineau_Marcely_KochCurve(1000, 1000);
-       koch.drawKochSnowflake(6, 300);
+       koch.drawKochSnowflake(7, 300);
    }
 }

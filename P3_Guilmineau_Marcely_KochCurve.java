@@ -36,7 +36,7 @@ public class P3_Guilmineau_Marcely_KochCurve {
         drawKochCurve(level, length);
     }
     
-    public void drawKochCurve(int level, int length) {
+    public void drawKochCurve(int level, double length) {
         if(level == 1) {    
             pen.down();
             pen.move(length);
@@ -51,7 +51,7 @@ public class P3_Guilmineau_Marcely_KochCurve {
         }
     }
     
-    public void drawKochCurve2(int level, int length) {
+    public void drawKochCurve2(int level, double length) {
         if(level == 1) {    
             pen.down();
             pen.move(length);
