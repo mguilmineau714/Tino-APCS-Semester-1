@@ -1,7 +1,6 @@
 public class Checker {
    public static void main(String[] args) {
-       System.out.printf("%.3f", "3");
-    }
+System.out.printf("%.30f", 75.1223211111111111111131231233);}
    
 
     public double power_2(int base, int n){
