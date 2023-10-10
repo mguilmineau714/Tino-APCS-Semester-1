@@ -29,7 +29,9 @@ public class P3_Guilmineau_Marcely_YFractal {
             pen.turnRight(60);
             pen.move(length);
             pen.turnRight(180);
+            pen.up();
             pen.move(length);
+            pen.down();
             pen.turnRight(60);
             pen.move(length);
         } else {
@@ -58,7 +60,9 @@ public class P3_Guilmineau_Marcely_YFractal {
             pen.down();
             pen.move(length/2);
             pen.turnRight(180);
+            pen.up();
             pen.move(length);
+            pen.down();
             pen.turnRight(60);
             pen.move(length/2);
             double x3 = pen.getXPos();
@@ -140,7 +144,7 @@ public class P3_Guilmineau_Marcely_YFractal {
         // Draw LFractal with given level and side length
         // fractal.drawLFractal(2, 200);
 
-        fractal.drawYFractal(3, 200);
+        fractal.drawYFractal(4, 200);
 
     }    
 

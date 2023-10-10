@@ -2,12 +2,4 @@
 comment0.target=Checker
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-comment2.params=base\ n
-comment2.target=double\ power_2(int,\ int)
-comment3.params=base\ n
-comment3.target=double\ power_1(int,\ int)
-comment4.params=n
-comment4.target=int\ sequence(int)
-comment5.params=n
-comment5.target=int\ f(int)
-numComments=6
+numComments=2
