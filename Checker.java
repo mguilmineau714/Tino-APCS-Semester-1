@@ -1,6 +1,9 @@
 public class Checker {
    public static void main(String[] args) {
-       int e = 'W';
-       System.out.println("2 + 2 = " + e);
+       int a = 3;
+       int b = 4;
+       int c = 5;
+       System.out.printf("(%d, %d, %d) = ", a, b, c);
+       
    }
 }
