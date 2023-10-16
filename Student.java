@@ -22,11 +22,15 @@ public class Student {
     }
 
     public static void main(String[] args) {
-        Student student1 = new Student("Alice", 18);
-        Student student2 = new Student("Bob", 19);
+        t t = new t(4);
+        int sum = t.c + t.d;
+        System.out.println(sum);
+        int sum2 = t.getC() + t.d;
+        System.out.println(sum2);
+        int sum3 = t.c + t.d;
+                System.out.println(sum3);
 
-        // Attempt to retrieve the total number of students
-        // This method will not work as expected because totalStudents is not static
-        System.out.println("Total number of students (incorrect): " + student1.getTotalStudents());
+
+
     }
 }
