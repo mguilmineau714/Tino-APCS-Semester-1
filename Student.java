@@ -1,36 +1,28 @@
+import gpdraw.*;
 public class Student {
-    private String name;
-    private int age;
-    private static int totalStudents = 0; // This should be static, but it's not
+    static SketchPad world = new SketchPad(1000, 1000);
+    static DrawingTool pen = new DrawingTool(world);
 
-    public Student(String name, int age) {
-        this.name = name;
-        this.age = age;
-        totalStudents++; // Incorrectly incrementing a non-static totalStudents
-    }
-
-    public int getTotalStudents() {
-        return totalStudents; // This will not work as expected because totalStudents is not static
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
+   public static void drawF(int length, int level ) {
+       if(level == 0) {
+           pen.turnRight(90);
+           pen.move(length);
+       } else {
+           pen.turnLeft(90);
+           pen.move(length/2);
+           double thisX = pen.getXPos();
+           double thisY = pen.getYPos();
+           double thisZ = pen.getDirection();
+           drawF(length/4, level-1);
+           pen.up();
+           pen.move(thisX, thisY);
+           pen.setDirection(thisZ);
+           pen.down();
+           pen.move(length/2);
+       }
+   }
 
     public static void main(String[] args) {
-        t t = new t(4);
-        int sum = t.c + t.d;
-        System.out.println(sum);
-        int sum2 = t.getC() + t.d;
-        System.out.println(sum2);
-        int sum3 = t.c + t.d;
-                System.out.println(sum3);
-
-
-
+      drawF(200, 2);
     }
 }
