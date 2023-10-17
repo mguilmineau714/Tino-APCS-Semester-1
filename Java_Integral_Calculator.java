@@ -24,12 +24,12 @@ public class Java_Integral_Calculator  {
         MathFunction function;
         Boolean makeGraph;
 
-        sumType = "TRAP";
-        subIntervals = 500000;
-        lowerBound = -0.001;
-        upperBound = 3.020123;
-        function = x -> Math.cos(x);
-        makeGraph = false;
+        sumType = "LRAM";
+        subIntervals = 1000;
+        lowerBound = 0;
+        upperBound = Math.PI/2;
+        function = x -> Math.sin(2*x) * Math.pow(x, 2);
+        makeGraph = true;
         
         Java_Integral_Calculator integralCalculator = new Java_Integral_Calculator();
 

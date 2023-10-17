@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Checker
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=length\ level
+comment2.target=void\ cross(int,\ int)
+comment3.params=length\ level
+comment3.target=void\ squares(double,\ int)
+comment4.params=length\ level
+comment4.target=void\ arrow(double,\ int)
+numComments=5

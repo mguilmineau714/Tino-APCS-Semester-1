@@ -1,20 +1,18 @@
 import gpdraw.*;
 /*
     Name:       Marcely Guilmineau
-    Date:       10/3/2023
+    Date:       10/15/2023
     Period:     3
 
     Is this lab fully working?  (Yes)
     If not, explain:
-    If resubmitting, explain:
+    If resubmitting, explain: fixed "your constructor should only take a DrawingTool or Sketchpad"
 */
 public class P3_Guilmineau_Marcely_KochCurve {
-    static SketchPad paper;
-    static DrawingTool pen;
+    DrawingTool pen;
     
-    public P3_Guilmineau_Marcely_KochCurve(int worldWidth, int worldHeight)  {
-        paper = new SketchPad(worldWidth, worldHeight);
-        pen = new DrawingTool(paper);
+    public P3_Guilmineau_Marcely_KochCurve(DrawingTool pen1) {
+        pen = pen1;
     }
     
     public void drawKochSnowflake2(int level, int length) {
