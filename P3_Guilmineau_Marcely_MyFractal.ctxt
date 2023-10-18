@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.target=P3_Guilmineau_Marcely_MyFractal
-comment0.text=\r\n\ \ \ \ Name\:\ \ \ \ \ \ \ Marcely\ Guilmineau\r\n\ \ \ \ Date\:\ \ \ \ \ \ \ 10/7/2023\r\n\ \ \ \ Period\:\ \ \ \ \ 3\r\n\r\n\ \ \ \ Is\ this\ lab\ fully\ working?\ \ (Yes)\r\n\ \ \ \ If\ not,\ explain\:\r\n\ \ \ \ If\ resubmitting,\ explain\:\r\n
+comment0.text=\r\n\ \ \ \ Name\:\ \ \ \ \ \ \ Marcely\ Guilmineau\r\n\ \ \ \ Date\:\ \ \ \ \ \ \ 10/16/2023\r\n\ \ \ \ Period\:\ \ \ \ \ 3\r\n\ \ \ \ Fractal\ Name\:\ Customizable\ Pentigree\ Star\r\n\ \ \ \ This\ class\ draws\ a\ fractal\ of\ a\ star\ made\ out\ of\ numCorners\ pentigrees.\r\n\ \ \ \ Note\:\ \r\n\ \ \ \ If\ 2\ methods\ are\ not\ allowed,\ then\ please\ only\ consider\ my\ pentigree\ method.\r\n\ \ \ \ I\ assumed\ they're\ allowed\ since\ koch\ snowflake\ also\ required\ 2\ methods.\r\n\r\n\ \ \ \ Is\ this\ lab\ fully\ working?\ \ (Yes)\r\n\ \ \ \ If\ not,\ explain\:\r\n\ \ \ \ If\ resubmitting,\ explain\:\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-comment2.params=level\ sideLength
-comment2.target=void\ drawSierpinskiPentagon(int,\ double)
-comment3.params=sideLength\ centerX\ centerY
-comment3.target=void\ drawPentagon(int,\ int,\ int)
+comment2.params=level\ length\ numCorners
+comment2.target=void\ drawPentigreeStar(int,\ double,\ int)
+comment3.params=level\ length
+comment3.target=void\ drawPentigree(int,\ double)
 numComments=4
