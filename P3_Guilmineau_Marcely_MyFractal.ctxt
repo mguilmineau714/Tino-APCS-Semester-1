@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=P3_Guilmineau_Marcely_MyFractal
-comment0.text=\r\n\ \ \ \ Name\:\ \ \ \ \ \ \ Marcely\ Guilmineau\r\n\ \ \ \ Date\:\ \ \ \ \ \ \ 10/16/2023\r\n\ \ \ \ Period\:\ \ \ \ \ 3\r\n\ \ \ \ Fractal\ Name\:\ Customizable\ Pentigree\ Star\r\n\ \ \ \ This\ class\ draws\ a\ fractal\ of\ a\ star\ made\ out\ of\ numCorners\ pentigrees.\r\n\ \ \ \ Is\ this\ lab\ fully\ working?\ \ (Yes)\r\n\ \ \ \ If\ not,\ explain\:\r\n\ \ \ \ If\ resubmitting,\ explain\:\r\n
+comment0.text=\r\n\ \ \ \ Name\:\ \ \ \ \ \ \ Marcely\ Guilmineau\r\n\ \ \ \ Date\:\ \ \ \ \ \ \ 10/16/2023\r\n\ \ \ \ Period\:\ \ \ \ \ 3\r\n\ \ \ \ Fractal\ Name\:\ Customizable\ Pentigree\ Star\r\n\ \ \ \ This\ class\ draws\ a\ fractal\ of\ a\ star\ made\ out\ of\ numCorners\ pentigrees.\r\n\ \ \ \ Is\ this\ lab\ fully\ working?\ \ (Yes)\r\n\ \ \ \ If\ not,\ explain\:\r\n\ \ \ \ If\ resubmitting,\ explain\:\ added\ a\ gradient\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 comment2.params=level\ length\ numCorners\ starColor\ makeGradient

@@ -8,7 +8,7 @@ import java.awt.Color;
     This class draws a fractal of a star made out of numCorners pentigrees.
     Is this lab fully working?  (Yes)
     If not, explain:
-    If resubmitting, explain:
+    If resubmitting, explain: added a gradient
 */
 public class P3_Guilmineau_Marcely_MyFractal {
     static SketchPad paper;
@@ -18,21 +18,12 @@ public class P3_Guilmineau_Marcely_MyFractal {
     public static void main(String[] args) {
         paper = new SketchPad(2000, 2000);
         pen = new DrawingTool(paper);
-        int level = 0;
+        int level = 5;
         double length = 200;
-        int numCorners = 6;
-        Color starColor = new Color(0, 0, 255);
-        Boolean makeGradient = true;
-        pen.up();
-        pen.move(-200, 300);
-        pen.down();
-        drawPentigreeStar(0, length, numCorners, starColor, makeGradient);
-        pen.up();
-        pen.move(200, 300);
-        pen.down();
-        drawPentigreeStar(1, length, numCorners, starColor, makeGradient);
-       // drawPentigreeStar(2, length, numCorners, starColor, makeGradient);
-       // drawPentigreeStar(3, length, numCorners, starColor, makeGradient);
+        int numCorners = 5;
+        Color starColor = new Color(255, 32, 100);
+        Boolean makeGradient = false;
+        drawPentigreeStar(level, length, numCorners, starColor, makeGradient);
     }
     
     public static void drawPentigreeStar(int level, double length, int numCorners, Color starColor, Boolean makeGradient) {

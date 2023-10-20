@@ -1,7 +1,7 @@
 import gpdraw.*;
 import java.awt.Color;
 
-public class Java_Integral_Calculator  {
+public class Definite_Integral_Calculator  {
     /**
      * Approximate integrals using riemann sums, and maybe graph them!
      *
@@ -31,8 +31,6 @@ public class Java_Integral_Calculator  {
         function = x -> Math.sin(2*x) * Math.pow(x, 2);
         makeGraph = true;
         
-        Java_Integral_Calculator integralCalculator = new Java_Integral_Calculator();
-
         if(makeGraph) { 
             graph = new SketchPad(2000, 2000);
             pen = new DrawingTool(graph);
@@ -48,10 +46,10 @@ public class Java_Integral_Calculator  {
         }
         
         System.out.println("The definite integral of the function given" + " from " + lowerBound + " to " + upperBound + " using the approximation method " + sumType + " approximated with " + subIntervals + " rectangles is ");
-        System.out.println("[" + integralCalculator.RAMSum(sumType, subIntervals, lowerBound, upperBound, function, makeGraph) + "]");
+        System.out.println("[" + RAMSum(sumType, subIntervals, lowerBound, upperBound, function, makeGraph) + "]");
     }
 
-    public double RAMSum(String sumType, double subIntervals, double lowerBound, double upperBound, MathFunction function, Boolean makeGraph) {
+    public static double RAMSum(String sumType, double subIntervals, double lowerBound, double upperBound, MathFunction function, Boolean makeGraph) {
         double answer = 0.0;
         double increment = (upperBound-lowerBound)/subIntervals;
         Color rectColor = new Color(184, 210, 252);
