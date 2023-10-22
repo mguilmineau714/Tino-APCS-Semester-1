@@ -1,5 +1,5 @@
-    import gpdraw.*;
-    import java.util.Scanner;
+import gpdraw.*;
+import java.util.Scanner;
 public class Checker {
     static SketchPad world = new SketchPad(1000, 1000);
     static DrawingTool pen = new DrawingTool(world);

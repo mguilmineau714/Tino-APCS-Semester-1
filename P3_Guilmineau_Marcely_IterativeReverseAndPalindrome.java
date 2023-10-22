@@ -1,11 +1,11 @@
 /*
     Name:       Marcely Guilmineau
-    Date:       10/18/2023
+    Date:       10/21/2023
     Period:     3
 
     Is this lab fully working?  (Yes)
     If not, explain:
-    If resubmitting, explain:
+    If resubmitting, explain: had to fix palindrome not counting numbers
 */
 public class P3_Guilmineau_Marcely_IterativeReverseAndPalindrome {
     public static void main(String[] args) {
@@ -15,10 +15,10 @@ public class P3_Guilmineau_Marcely_IterativeReverseAndPalindrome {
         System.out.println(iterativeStringReverse("a"));
         System.out.println(iterativeStringReverse(""));
         
-        //Test iterativeIsPalindrome
+        // Test iterativeIsPalindrome
         System.out.println(iterativeIsPalindrome("radar"));
         System.out.println(iterativeIsPalindrome("J"));
-        System.out.println(iterativeIsPalindrome(" Lewd did I live, & evil I did dwel."));
+        System.out.println(iterativeIsPalindrome(" Lew2323d did I live, & evil I did dwel."));
         System.out.println(iterativeIsPalindrome("I like Java"));
         System.out.println(iterativeIsPalindrome(" Straw? No, too stupid a fad, I put soot on warts."));
         System.out.println(iterativeIsPalindrome("***Nurse!*** I spy gypsies....run!!!!!  "));
@@ -34,7 +34,7 @@ public class P3_Guilmineau_Marcely_IterativeReverseAndPalindrome {
     }
     
     public static boolean iterativeIsPalindrome(String s) {
-        String str = s.replaceAll("[^a-zA-Z]", "").toUpperCase();
+        String str = s.replaceAll("[^a-zA-Z0-9]", "").toUpperCase();
         Boolean b = true;
         if(str.length() > 1) {
             for(int i = 0; i < str.length(); i++) {

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=P3_Guilmineau_Marcely_RecursiveReverseAndPalindrome
-comment0.text=\r\n\ \ \ \ Name\:\ \ \ \ \ \ \ Marcely\ Guilmineau\r\n\ \ \ \ Date\:\ \ \ \ \ \ \ 10/16/2023\r\n\ \ \ \ Period\:\ \ \ \ \ 3\r\n\r\n\ \ \ \ Is\ this\ lab\ fully\ working?\ \ (Yes)\r\n\ \ \ \ If\ not,\ explain\:\r\n\ \ \ \ If\ resubmitting,\ explain\:\r\n
+comment0.text=\r\n\ \ \ \ Name\:\ \ \ \ \ \ \ Marcely\ Guilmineau\r\n\ \ \ \ Date\:\ \ \ \ \ \ \ 10/21/2023\r\n\ \ \ \ Period\:\ \ \ \ \ 3\r\n\r\n\ \ \ \ Is\ this\ lab\ fully\ working?\ \ (Yes)\r\n\ \ \ \ If\ not,\ explain\:\r\n\ \ \ \ If\ resubmitting,\ explain\:\ had\ to\ fix\ palindrome\ not\ counting\ numbers\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 comment2.params=str
