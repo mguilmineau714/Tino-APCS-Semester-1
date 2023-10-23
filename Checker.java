@@ -4,7 +4,16 @@ public class Checker {
     static SketchPad world = new SketchPad(1000, 1000);
     static DrawingTool pen = new DrawingTool(world);
      public static void main(String[] args) {
-        drawT(3, 200);
+         for(int i = 0; i < 30; i++ ) {
+              System.out.println(randomNum(17, 20));
+         }
+    }
+    public static int randomNum(int max) {
+        return (int)(Math.random()*max) +1;
+    }
+    
+    public static int randomNum(int max, int excluded) {
+        return (int)(Math.random()*(excluded-1)) + randomNum(max-excluded)+1;
     }
 
     public static int count(String str) {
