@@ -5,7 +5,7 @@
 
     Is this lab fully working?  (Yes)
     If not, explain:
-    If resubmitting, explain: had to fix palindrome not counting numbers
+    If resubmitting, explain: McLeod said you can't use replaceAll
 */
 public class P3_Guilmineau_Marcely_RecursiveReverseAndPalindrome {
     public static void main(String[] args) {
@@ -30,7 +30,11 @@ public class P3_Guilmineau_Marcely_RecursiveReverseAndPalindrome {
     }
     
     public static boolean recursiveIsPalindrome(String s) {
-        String str = s.replaceAll("[^a-zA-Z0-9]", "").toUpperCase();
+        String str = "";
+        for(int i = 0; i < s.length(); i++) {
+            str += Character.isLetterOrDigit(s.charAt(i)) ? s.charAt(i) : "";
+        }
+        str = str.toUpperCase();
         return str.length() < 2 || str.charAt(0) == str.charAt(str.length()-1) && recursiveIsPalindrome(str.substring(1, str.length()-1));
     }
 }
