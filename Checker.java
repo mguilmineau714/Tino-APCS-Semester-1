@@ -1,13 +1,22 @@
 import gpdraw.*;
 import java.util.Scanner;
 public class Checker {
-    static SketchPad world = new SketchPad(1000, 1000);
-    static DrawingTool pen = new DrawingTool(world);
+    //static SketchPad world = new SketchPad(1000, 1000);
+    //static DrawingTool pen = new DrawingTool(world);
      public static void main(String[] args) {
          for(int i = 0; i < 30; i++ ) {
               System.out.println(randomNum(17, 20));
          }
     }
+    
+    public static void printDiamond(int n) {
+        for(int i = 0; i < n*2; i++) {
+            for(int j = 0; j ; j++) {
+                
+            }
+        }
+    }
+    
     public static int randomNum(int max) {
         return (int)(Math.random()*max) +1;
     }
@@ -22,7 +31,7 @@ public class Checker {
         }
         return (str.substring(0, 3).charAt(0) == str.substring(0, 3).charAt(2) && str.substring(0, 3).charAt(0) != str.substring(0, 3).charAt(1) ? 1 : 0) + count(str.substring(1));
     }
-    
+    /*
     public static void drawT(int level, double length) {
         if(level == 1) {
             pen.move(length);
@@ -103,6 +112,6 @@ public class Checker {
            arrow(length/3, level-1);
        }
    }
-
+    */
    
 }
