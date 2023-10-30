@@ -1,20 +1,67 @@
 import gpdraw.*;
 import java.util.Scanner;
+import java.awt.Color;
+
 public class Checker {
-    //static SketchPad world = new SketchPad(1000, 1000);
-    //static DrawingTool pen = new DrawingTool(world);
+    static SketchPad world = new SketchPad(300, 300);
+    static DrawingTool pen = new DrawingTool(world);
      public static void main(String[] args) {
-         for(int i = 0; i < 30; i++ ) {
-              System.out.println(randomNum(17, 20));
-         }
+         drawCheckerboard(10, 10);
     }
-    
-    public static void printDiamond(int n) {
-        for(int i = 0; i < n*2; i++) {
-            for(int j = 0; j ; j++) {
-                
+     
+    public static void drawCheckerboard(int w, int l) {
+        Color newCol;
+        for(int i = 0; i < w; i++) {
+            for(int j = 0; j < l; j++) {
+                newCol = i%2==0
+                ?
+                (j%2 == 0 ? Color.BLACK : Color.RED)
+                :
+                (j%2 == 0 ? Color.RED : Color.BLACK);
+                drawSquare(20*i, 20*j, 20, newCol);
             }
         }
+    }
+    
+    public static void drawSquare(int sX, int sY, int sL, Color color) {
+       pen.up();
+       pen.move(sX, sY);
+       pen.down();
+       pen.drawRect(sL, sL);
+       pen.setColor(color);
+       pen.fillRect(sL, sL);
+       pen.up();
+   }
+    
+    public static void printDiamond(int n) {
+        if(n >= 1 && n <= 40) { 
+            // Upper Part
+            for(int i = 0; i < n; i++) {
+                for(int j = 1; j < n-i; j++) {
+                    System.out.print(" ");
+                }
+                for(int h = 1; h <= 2*i+1; h++) {
+                    System.out.print("*");
+                }
+                for(int g = 1; g < n-i; g++) {
+                    System.out.print(" ");
+                }   
+                System.out.println();
+            }
+            // Lower Part
+            for(int i = n-2; i >= 0; i--) {
+                for(int j = 1; j < n-i; j++) {
+                    System.out.print(" ");
+                }
+                for(int h = 1; h <= 2*i+1; h++) {
+                    System.out.print("*");
+                }
+                for(int g = 1; g < n-i; g++) {
+                    System.out.print(" ");
+                }   
+                System.out.println();
+            }
+        } else System.out.println("n is too small or large - n must be in within [1, 40]");
     }
     
     public static int randomNum(int max) {
