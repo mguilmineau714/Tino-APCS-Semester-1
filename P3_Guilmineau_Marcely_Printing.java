@@ -1,4 +1,3 @@
-
 /*
     Name:       Marcely Guilmineau
     Date:       08/29/2023
@@ -24,4 +23,3 @@ public class P3_Guilmineau_Marcely_Printing {
         System.out.println("I have " + apples + " apples and $" + money + ".");
     }
 }
-
