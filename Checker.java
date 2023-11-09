@@ -6,9 +6,36 @@ public class Checker {
     static SketchPad world = new SketchPad(300, 300);
     static DrawingTool pen = new DrawingTool(world);
      public static void main(String[] args) {
-         drawCheckerboard(10, 10);
+            int counter = 0;
+            for(int j = 0; j < 100; j++) {
+                counter += testIterations("AIVB", 30);
+            }
+            System.out.println(counter/100);
+    }
+    
+    public static int testIterations(String singleString, int stringLength) {
+         int iterationCounter = 0;
+         Boolean matchNotFound = true;
+         while(matchNotFound) {
+             String a = generateRandomString(stringLength);
+             if(a.contains(singleString)) {
+                 matchNotFound = false;
+             }
+             iterationCounter++;
+            // System.out.println("String: " + a + " Iteration #: " + iterationCounter);
+         }
+         return iterationCounter;
     }
      
+    public static String generateRandomString(int length) {
+        String s = "";
+        for(int i = 0; i < length; i++) {
+            int randomNumber = (int)(Math.random()*26+65);
+            s += (char)randomNumber;
+        }
+        return s;
+    }
+    
     public static void drawCheckerboard(int w, int l) {
         Color newCol;
         for(int i = 0; i < w; i++) {
@@ -78,7 +105,7 @@ public class Checker {
         }
         return (str.substring(0, 3).charAt(0) == str.substring(0, 3).charAt(2) && str.substring(0, 3).charAt(0) != str.substring(0, 3).charAt(1) ? 1 : 0) + count(str.substring(1));
     }
-    /*
+    
     public static void drawT(int level, double length) {
         if(level == 1) {
             pen.move(length);
@@ -159,6 +186,5 @@ public class Checker {
            arrow(length/3, level-1);
        }
    }
-    */
    
 }
