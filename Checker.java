@@ -1,5 +1,5 @@
 import gpdraw.*;
-import java.util.Scanner;
+import java.util.*;
 import java.awt.Color;
 
 public class Checker {

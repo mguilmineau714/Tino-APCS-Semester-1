@@ -12,8 +12,8 @@ import java.util.*;
 
 public class P3_Guilmineau_Marcely_Compression {
     public static void main(String[] args) {
-    // compress("P3_Guilmineau_Marcely_LeetSpeak.java");
-    decompress("P3_Guilmineau_Marcely_LeetSpeak.txt");
+        // compress("P3_Guilmineau_Marcely_LeetSpeak.java");
+        // decompress("P3_Guilmineau_Marcely_LeetSpeak.txt");
     }
     
     public static void compress(String filename) {
