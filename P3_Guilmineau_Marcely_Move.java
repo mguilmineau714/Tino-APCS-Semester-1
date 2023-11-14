@@ -6,7 +6,7 @@ import java.util.Scanner;
 
     Is this lab fully working?  (Yes)
     If not, explain:
-    If resubmitting, explain:
+    If resubmitting, explain: Addressed grading feedback
 */ 
 public class P3_Guilmineau_Marcely_Move {
     
@@ -25,11 +25,11 @@ public class P3_Guilmineau_Marcely_Move {
                 validInput = true;
             } else {
                 System.out.println("Invalid format. Please enter exactly two integers separated by a space.");
-                s.next();
+                s.nextLine();
             }
         } else {
             System.out.println("Invalid format. Please enter exactly two integers separated by a space.");
-            s.next();
+            s.nextLine();
         }
     } while (!validInput);
     

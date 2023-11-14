@@ -1,4 +1,4 @@
-    import java.util.*;
+import java.util.*;
 
 public class P3_Guilmineau_Marcely_ExceptionsClasswork {
 

@@ -6,7 +6,7 @@ import java.util.Scanner;
 
     Is this lab fully working?  (Yes)
     If not, explain:
-    If resubmitting, explain:
+    If resubmitting, explain: Addressed grading feedback
 */ 
 
 public class P3_Guilmineau_Marcely_MoveDriver {
