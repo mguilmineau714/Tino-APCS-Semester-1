@@ -40,9 +40,6 @@ public class P3_Guilmineau_Marcely_StringCraft {
             if(score < temp) {
                 System.out.println("Illegal Move.");
             }
-            if(s.nextLine() == "q") {
-                break;
-            }
         }
     }
     

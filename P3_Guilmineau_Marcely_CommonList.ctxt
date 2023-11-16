@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=P3_Guilmineau_Marcely_CommonList
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=a
+comment2.target=java.lang.String\ printList(java.util.ArrayList)
+comment3.params=n\ a\ b
+comment3.target=java.util.ArrayList\ randomList(int,\ int,\ int)
+comment4.params=input
+comment4.target=void\ removeNegatives(java.util.ArrayList)
+comment5.params=a\ b
+comment5.target=java.util.ArrayList\ commonList(java.util.ArrayList,\ java.util.ArrayList)
+numComments=6
