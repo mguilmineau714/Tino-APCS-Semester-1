@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-import wordletester.*;
+// import wordletester.*;
 
 /*
     Name:       Marcely Guilmineau
@@ -47,7 +47,7 @@ public class P3_Guilmineau_Marcely_Wordle {
         if(guess == null && guessResult == null) {
             return "CRATE";
         }
-        WordleTester a = new WordleTester();
+       // WordleTester a = new WordleTester();
        // ArrayList<String> b = a.getResponse(guess);
         
         return nextGuess;
