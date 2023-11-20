@@ -90,21 +90,11 @@ public class P3_Guilmineau_Marcely_Wordle {
                 }
                 if(colorResult.substring(i, i + 1).equalsIgnoreCase("N")) {
                     while(iterator.hasNext()) {
-                        String j = iterator.next();                          
-                        if(j.charAt(i) == guess.charAt(i) || greenCounter == 0 && j.indexOf(guess.charAt(i)) == -1) {
+                        String j = iterator.next();
+                        if(j.indexOf(guess.charAt(i)) != -1) {
                             iterator.remove();
-                        } else if(j.indexOf(guess.charAt(i)) != -1 && greenCounter != 0) {
-                            Boolean b = false;
-                            char a = guess.charAt(i);
-                            for(int k = 0; k < 5; k++) {
-                                if(colorResult.charAt(k) == 'G' && guess.charAt(k) == j.charAt(k)) {
-                                    b = true;
-                                }
-                            }
-                            if(!b) {
-                                iterator.remove();
-                            }
-                            b = false;
+                        } else if(guess.lastIndexOf(guess.charAt(i)) > i && greenCounter > 0) {
+                            iterator.remove();
                         }
                     }
                 }
