@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=P3_Guilmineau_Marcely_Wordle
+comment0.text=\r\n\ \ \ \ Name\:\ \ \ \ \ \ \ Marcely\ Guilmineau\r\n\ \ \ \ Date\:\ \ \ \ \ \ \ 11/20/2023\r\n\ \ \ \ Period\:\ \ \ \ \ 3\r\n\ \ \ \ \r\n\ \ \ \ Is\ this\ lab\ fully\ working?\ (Yes)\r\n\ \ \ \ If\ not,\ explain\:\r\n\ \ \ \ If\ resubmitting,\ explain\:\r\n
+comment1.params=
+comment1.target=P3_Guilmineau_Marcely_Wordle()
+comment2.params=guess\ guessResult
+comment2.target=java.lang.String\ getNextGuess(java.lang.String,\ java.lang.String)
+comment2.text=\r\n\ Given\ a\ guess\ and\ color\ result,\ this\ method\ returns\ the\ next\ word\ to\ guess.\r\n\ <br><br>\r\n\ The\ first\ time\ you\ call\ this\ method,\ you\ should\ pass\ in\ (null,\ null)\r\n\ to\ indicate\ a\ first\ guess.\ \ In\ this\ case,\ your\ getNextGuess\ method\r\n\ can\ return\ any\ first\ guess\ you\ would\ like.\ \ This\ can\ be\ the\ first\ word\ in\ the\r\n\ Wordle\ list\ of\ possible\ words,\ it\ can\ be\ a\ random\ word\ from\ the\ Wordle\ list,\r\n\ or\ it\ can\ be\ a\ special\ starting\ word\ you\ selected\ for\ whatever\ reason.\r\n\ <br><br>\r\n\ Subsequent\ calls\ to\ getNextGuess\ should\ use\ the\ result\ of\ obj.getResponse(guess)\r\n\ as\ your\ color\ where\ obj\ is\ a\ WordleTester\ object.\r\n\ @param\ guess\r\n\ @param\ guessResult\r\n\ @return\ The\ next\ word\ to\ guess\r\n
+comment3.params=guess\ colorResult
+comment3.target=void\ eliminateWords(java.lang.String,\ java.lang.String)
+comment3.text=\r\n\ Given\ a\ word\ guess\ and\ the\ colors\ reported\ by\ the\ Wordle\ website,\ write\ a\r\n\ method\ that\ eliminates\ words\ from\ the\ list\ that\ cannot\ possibly\ be\ answers.\r\n\ For\ example,\ if\ a\ letter\ is\ marked\ as\ YELLOW\ then\ you\ can\ remove\ all\ words\r\n\ with\ that\ letter\ in\ that\ spot.\ \ And\ what\ should\ you\ eliminate\ if\ you\r\n\ see\ a\ GREEN\ or\ GRAY\ letter?\r\n\ @param\ guess\ A\ String\ guess\ chosen\ by\ the\ user\r\n\ @param\ colorResult\ The\ String\ color\ for\ this\ guess\ reported\ by\ Wordle\r\n
+comment4.params=str
+comment4.target=boolean\ isValidGuess(java.lang.String)
+comment4.text=\r\n\ Write\ a\ method\ that\ returns\ whether\ or\ not\ a\ given\ String\ is\ a\ valid\ Wordle\ guess.\r\n\ A\ guess\ is\ valid\ if\ it\ is\ exactly\ 5\ alphabetic\ characters\ long.\r\n\ @param\ str\ A\ String\ guess\ chosen\ by\ the\ user\r\n\ @return\ Whether\ the\ given\ string\ is\ a\ valid\ guess\r\n
+comment5.params=str
+comment5.target=boolean\ isValidReport(java.lang.String)
+comment5.text=\r\n\ Write\ a\ method\ that\ returns\ whether\ or\ not\ a\ given\ String\ is\ a\ valid\ color\ String.\r\n\ A\ color\ String\ is\ valid\ if\ it\ is\ exactly\ 5\ characters\ long\ and\ contains\ only\ the\r\n\ characters\ 'G',\ 'Y',\ or\ 'N'\ (case\ insensitive)\r\n\ @param\ str\ A\ String\ color\ reported\ by\ the\ Wordle\ website\r\n\ @return\ Whether\ the\ given\ color\ String\ is\ valid\r\n
+comment6.params=
+comment6.target=java.lang.String\ returnWinningWord()
+comment6.text=\r\n\ Write\ a\ method\ such\ that\ if\ the\ list\ of\ possible\ words\ gets\ down\ to\ 1\ possibility,\r\n\ return\ that\ solution\ word,\ otherwise\ return\ null.\r\n\ @return\ The\ solution\ word\ or\ null\ if\ no\ solution\ has\ been\ found\ yet\r\n
+comment7.params=
+comment7.target=int\ size()
+comment7.text=\r\n\ Write\ a\ method\ that\ returns\ the\ list\ size\ of\ the\ possible\ solution\ words\ remaining\r\n\ @return\ list\ size\ of\ the\ possible\ solution\ words\ remaining\r\n
+comment8.params=
+comment8.target=void\ printSolutionWords()
+comment8.text=\r\n\ Write\ a\ method\ that\ prints\ the\ list\ of\ possible\ solution\ words.\ \ This\ list\ will\ get\r\n\ smaller\ over\ time\ until\ only\ one\ item\ remains,\ or\ no\ items\ if\ you\ are\ doing\r\n\ the\ Basic\ Version\ with\ words\ that\ don't\ have\ repeat\ letters.\r\n
+numComments=9

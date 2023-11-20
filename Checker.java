@@ -6,11 +6,22 @@ public class Checker {
     static SketchPad world = new SketchPad(300, 300);
     static DrawingTool pen = new DrawingTool(world);
      public static void main(String[] args) {
-            int counter = 0;
-            for(int j = 0; j < 100; j++) {
-                counter += testIterations("AIVB", 30);
+            System.out.println(substringCounter("abcbcba"));
+            System.out.println(substringCounter("mississippi"));
+            System.out.println(substringCounter("ababacaca"));
+            System.out.println(substringCounter("aaaaa"));
+    }
+    
+    public static int substringCounter(String s) {
+        ArrayList<String> a = new ArrayList();
+        for(int i = 0; i < s.length(); i++) {
+            for(int j = i+1; j <= s.length(); j++) {
+                if(!a.contains(s.substring(i, j))) {
+                    a.add(s.substring(i, j));
+                }
             }
-            System.out.println(counter/100);
+        }
+        return a.size();
     }
     
     public static int testIterations(String singleString, int stringLength) {
