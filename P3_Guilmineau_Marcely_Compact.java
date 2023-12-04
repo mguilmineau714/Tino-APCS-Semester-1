@@ -44,8 +44,23 @@ public class P3_Guilmineau_Marcely_Compact {
         compactArray(test);
         System.out.println(Arrays.toString(test));
     }
-
-    public static void compactArray(int[] arr) {
+    
+     public static void compactArray(int[] arr) {
+            int zeroCount = 0, a = 0;
+            for(int i : arr) {
+                zeroCount += i == 0 ? 1 : 0; 
+            }
+            for(int i = 0; i < arr.length; i++) {
+                if(arr[i] != 0) {
+                    arr[a] = arr[i];
+                    a++;
+                }
+            }
+            for(int i = arr.length - zeroCount; i < arr.length; i++) {
+                arr[i] = 0; 
+            }
+        }
+    public static void compactArrayOld(int[] arr) {
         int zeroCount = 0;
         for(int i : arr) {
             zeroCount += i == 0 ? 1 : 0; 

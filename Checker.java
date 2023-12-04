@@ -6,10 +6,7 @@ public class Checker {
     static SketchPad world = new SketchPad(300, 300);
     static DrawingTool pen = new DrawingTool(world);
      public static void main(String[] args) {
-            System.out.println(substringCounter("abcbcba"));
-            System.out.println(substringCounter("mississippi"));
-            System.out.println(substringCounter("ababacaca"));
-            System.out.println(substringCounter("aaaaa"));
+         pen.move(10);
     }
     
     public static int substringCounter(String s) {

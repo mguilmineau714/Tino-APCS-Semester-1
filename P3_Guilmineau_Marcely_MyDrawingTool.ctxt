@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=P3_Guilmineau_Marcely_MyDrawingTool
+comment0.text=\r\n\ \ \ \ Name\:\ \ \ \ \ \ \ Marcely\ Guilmineau\r\n\ \ \ \ Date\:\ \ \ \ \ \ \ 11/29/2023\r\n\ \ \ \ Period\:\ \ \ \ \ 3\r\n\ \ \ \ \r\n\ \ \ \ Is\ this\ lab\ fully\ working?\ (Yes)\r\n\ \ \ \ If\ not,\ explain\:\r\n\ \ \ \ If\ resubmitting,\ explain\:\r\n
+comment1.params=x\ y\ w\ h\ color
+comment1.target=void\ drawCompletedRectangle(double,\ double,\ double,\ double,\ java.awt.Color)
+comment2.params=sideCount\ sideLength
+comment2.target=void\ drawPolygon(int,\ double)
+comment3.params=
+comment3.target=P3_Guilmineau_Marcely_MyDrawingTool()
+comment4.params=pad
+comment4.target=P3_Guilmineau_Marcely_MyDrawingTool(gpdraw.SketchPad)
+comment5.params=x\ y
+comment5.target=void\ setPosition(double,\ double)
+numComments=6

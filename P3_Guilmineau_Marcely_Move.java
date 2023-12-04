@@ -20,7 +20,7 @@ public class P3_Guilmineau_Marcely_Move {
         System.out.print(prompt);
         if(s.hasNextInt()) {
             int1 = s.nextInt();
-            if (s.hasNextInt()) {
+            if(s.hasNextInt()) {
                 int2 = s.nextInt();
                 validInput = true;
             } else {
