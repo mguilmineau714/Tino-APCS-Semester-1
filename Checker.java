@@ -1,14 +1,23 @@
 import gpdraw.*;
 import java.util.*;
-import java.awt.Color;
+import java.awt.*;
 
 public class Checker {
     static SketchPad world = new SketchPad(300, 300);
     static DrawingTool pen = new DrawingTool(world);
-     public static void main(String[] args) {
-         pen.move(10);
+    public static void main(String[] args) {
+
     }
-    
+
+    public static void shuffle(ArrayList<Integer> deck) {
+        for(int i = 0; i < deck.size(); i++) {
+            int random = (int)(Math.random()*deck.size());
+            int temp = deck.get(i);
+            deck.set(i, deck.get(random));
+            deck.set(random, temp);
+        }
+    }
+
     public static int substringCounter(String s) {
         ArrayList<String> a = new ArrayList();
         for(int i = 0; i < s.length(); i++) {
@@ -20,21 +29,21 @@ public class Checker {
         }
         return a.size();
     }
-    
+
     public static int testIterations(String singleString, int stringLength) {
-         int iterationCounter = 0;
-         Boolean matchNotFound = true;
-         while(matchNotFound) {
-             String a = generateRandomString(stringLength);
-             if(a.contains(singleString)) {
-                 matchNotFound = false;
-             }
-             iterationCounter++;
+        int iterationCounter = 0;
+        Boolean matchNotFound = true;
+        while(matchNotFound) {
+            String a = generateRandomString(stringLength);
+            if(a.contains(singleString)) {
+                matchNotFound = false;
+            }
+            iterationCounter++;
             // System.out.println("String: " + a + " Iteration #: " + iterationCounter);
-         }
-         return iterationCounter;
+        }
+        return iterationCounter;
     }
-     
+
     public static String generateRandomString(int length) {
         String s = "";
         for(int i = 0; i < length; i++) {
@@ -43,31 +52,31 @@ public class Checker {
         }
         return s;
     }
-    
+
     public static void drawCheckerboard(int w, int l) {
         Color newCol;
         for(int i = 0; i < w; i++) {
             for(int j = 0; j < l; j++) {
                 newCol = i%2==0
                 ?
-                (j%2 == 0 ? Color.BLACK : Color.RED)
+                    (j%2 == 0 ? Color.BLACK : Color.RED)
                 :
                 (j%2 == 0 ? Color.RED : Color.BLACK);
                 drawSquare(20*i, 20*j, 20, newCol);
             }
         }
     }
-    
+
     public static void drawSquare(int sX, int sY, int sL, Color color) {
-       pen.up();
-       pen.move(sX, sY);
-       pen.down();
-       pen.drawRect(sL, sL);
-       pen.setColor(color);
-       pen.fillRect(sL, sL);
-       pen.up();
-   }
-    
+        pen.up();
+        pen.move(sX, sY);
+        pen.down();
+        pen.drawRect(sL, sL);
+        pen.setColor(color);
+        pen.fillRect(sL, sL);
+        pen.up();
+    }
+
     public static void printDiamond(int n) {
         if(n >= 1 && n <= 40) { 
             // Upper Part
@@ -98,11 +107,11 @@ public class Checker {
             }
         } else System.out.println("n is too small or large - n must be in within [1, 40]");
     }
-    
+
     public static int randomNum(int max) {
         return (int)(Math.random()*max) +1;
     }
-    
+
     public static int randomNum(int max, int excluded) {
         return (int)(Math.random()*(excluded-1)) + randomNum(max-excluded)+1;
     }
@@ -113,7 +122,7 @@ public class Checker {
         }
         return (str.substring(0, 3).charAt(0) == str.substring(0, 3).charAt(2) && str.substring(0, 3).charAt(0) != str.substring(0, 3).charAt(1) ? 1 : 0) + count(str.substring(1));
     }
-    
+
     public static void drawT(int level, double length) {
         if(level == 1) {
             pen.move(length);
@@ -130,22 +139,22 @@ public class Checker {
         }
     }
 
-   public static void cross(int length, int level ) {
-       if(level == 0) {
-           pen.turnRight(90);
-           pen.move(length);
-       } else {
-           cross(length/2, level-1);
-           pen.turnRight(180);
-           cross(length/4, level-1);
-           pen.turnRight(90);
-           cross(length/4, level-1);
-           pen.turnLeft(180);
-           cross(length/2, level-1);
-       }
-   }
-   
-   public static void draw(double length, int level) {
+    public static void cross(int length, int level ) {
+        if(level == 0) {
+            pen.turnRight(90);
+            pen.move(length);
+        } else {
+            cross(length/2, level-1);
+            pen.turnRight(180);
+            cross(length/4, level-1);
+            pen.turnRight(90);
+            cross(length/4, level-1);
+            pen.turnLeft(180);
+            cross(length/2, level-1);
+        }
+    }
+
+    public static void draw(double length, int level) {
         if (level == 0) {
             pen.forward(length);
             pen.turnLeft(90);
@@ -158,7 +167,7 @@ public class Checker {
         }
     }
 
-   public static void squares(double length, int level) {
+    public static void squares(double length, int level) {
         if (level == 0) {
             pen.forward(length);
             pen.turnLeft();
@@ -167,32 +176,32 @@ public class Checker {
             pen.turnRight();
             squares(length / 2, level - 1);
             squares(length / 2, level - 1);
+        }
     }
-   }
-   
-   public static void arrow(double length, int level) {
-       pen.move(length);
-       pen.turnRight(135);
-       pen.move(length/3);
-       double thisX = pen.getXPos();
-       double thisY = pen.getYPos();
-       double thisZ = pen.getDirection();
-       if(level > 1) {
-           pen.turnLeft(90);
-           arrow(length/3, level-1);
-       }
-       pen.up();
-       pen.move(thisX, thisY);
-       pen.setDirection(thisZ);
-       pen.turnRight(180);
-       pen.move(length/3);
-       pen.turnLeft(90);
-       pen.down();
-       pen.move(length/3);
-       if(level > 1) {
-           pen.turnRight(90);
-           arrow(length/3, level-1);
-       }
-   }
-   
+
+    public static void arrow(double length, int level) {
+        pen.move(length);
+        pen.turnRight(135);
+        pen.move(length/3);
+        double thisX = pen.getXPos();
+        double thisY = pen.getYPos();
+        double thisZ = pen.getDirection();
+        if(level > 1) {
+            pen.turnLeft(90);
+            arrow(length/3, level-1);
+        }
+        pen.up();
+        pen.move(thisX, thisY);
+        pen.setDirection(thisZ);
+        pen.turnRight(180);
+        pen.move(length/3);
+        pen.turnLeft(90);
+        pen.down();
+        pen.move(length/3);
+        if(level > 1) {
+            pen.turnRight(90);
+            arrow(length/3, level-1);
+        }
+    }
+
 }
