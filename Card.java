@@ -13,7 +13,17 @@ public class Card implements Comparable<Card> {
     private int value;
 
     /** boolean value that determines whether this card is face up or down */
-    private boolean isFaceUp;
+    private boolean isFaceUp; 
+    
+    /**
+     * Returns the value of this card - card c.
+     * @param c a <code>Card</code> representing the card you would like to compare to.
+     * @return a <code>int</code> representing value of this card - card c
+     */
+    @Override
+    public int compareTo(Card c) {
+        return getValue() - c.getValue();
+    }
 
     /**
      * Creates a new <code>Card</code> instance.

@@ -17,7 +17,8 @@ public class P3_Guilmineau_Marcely_MoveDriver {
            P3_Guilmineau_Marcely_Move e = P3_Guilmineau_Marcely_Move.move(s, "Enter two integers: ");
            System.out.println(e.toCoordinates(e.getStorage1(), e.getStorage2()));
            System.out.print("Type q to quit or anything else to continue: ");
-           if(s.next().equalsIgnoreCase("q")) {
+           String input = s.nextLine();
+           if(input.equalsIgnoreCase("q")) {
                break;
            }
        } 
