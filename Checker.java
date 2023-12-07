@@ -6,6 +6,51 @@ public class Checker {
     static SketchPad world = new SketchPad(300, 300);
     static DrawingTool pen = new DrawingTool(world);
     public static void main(String[] args) {
+        Commands cs = new Commands(new Executable[]{new Prisoner()});
+        String name = ((Prisoner)cs.CMDS[0]).name;
+        System.out.println(name);
+    }
+
+    public static interface Executable {
+        void execute(String cmd);
+    }
+
+    public static class Command implements Executable {
+
+        public void execute(String cmd) {
+            System.out.println("Executing command: " + getOp(cmd));
+        }
+
+        public String getOp(String cmd) {
+            return new Scanner(cmd).nextLine();
+        }
+
+    }
+
+    public static class CommandWord extends Command {
+        public String getOp(String cmd) {
+            return new Scanner(cmd).next();
+        }
+    }
+
+    public static class Prisoner implements Executable {
+        public String name = "Prisoner";
+
+        public void execute(String reason) {
+            System.out.println(name + " was executed because " + reason);
+        }
+    }
+
+    public static class Commands {
+        public final Executable[] CMDS;
+
+        public Commands() {
+            CMDS = new Executable[3];
+        }
+
+        public Commands(Executable[] cmds) {
+            CMDS = cmds;
+        }
 
     }
 
