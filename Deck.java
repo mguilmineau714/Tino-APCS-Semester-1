@@ -48,7 +48,7 @@ public class Deck {
     public Card getCard(int a) {
         return deck.get(a);
     }
-    
+
     public Card draw() {
         Card temp = deck.get(deck.size()-1);
         deck.remove(temp);
@@ -57,8 +57,9 @@ public class Deck {
     
     public Deck TakeTopNCards(int n) {
         Deck output = new Deck();
-        for(int i = 0; i < deck.size()-n; i++) {
-            output.addCard(deck.get(i));
+        for(int i = 0; i < n; i++) {
+            output.addCard(deck.get(0));
+            deck.remove(0);
         }
         return output;
     }

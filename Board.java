@@ -1,8 +1,12 @@
-public class Board
-{   
+import java.util.*;
+
+public class Board {       
+    
     /* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
     // Attributes
-    
+    Deck[] stacks;
+    Deck drawPile;
+
     /**
      *  Sets up the Board and fills the stacks and draw pile from a Deck
      *  consisting of numDecks Decks.  Here are examples:
@@ -18,7 +22,27 @@ public class Board
      *  of the cards remain in the draw pile.
      */    
     public Board(int numStacks, int numDecks) {
-        /* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
+        String[] symbols = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "T", "J", "Q", "K"};
+        int[] values = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+        Deck[] stacks = new Deck[numStacks];
+        drawPile = new Deck();
+        
+        for(int i = 0; i < numStacks; i++) {
+            stacks[i] = new Deck();
+        }
+        
+        for(int i = 0; i < values.length; i++) {
+            for(int j = 0; j < numDecks; j++) {
+                Card addition = new Card(symbols[i], values[i]);
+                drawPile.addCard(addition);
+            }
+        }
+        
+        drawPile.shuffle();
+        
+        for(int i = 0; i < numDecks; i++) {
+            
+        }
     }
 
     /**
@@ -26,22 +50,35 @@ public class Board
      *  next card if one is available.
      */
     public void makeMove(String symbol, int src, int dest) {
-        /* *** TO BE IMPLEMENTED IN ACTIVITY 5 *** */
+        
+        
     }
 
     /** 
      *  Moves one card onto each stack, or as many as are available
      */
     public void drawCards() {
-        /* *** TO BE IMPLEMENTED IN ACTIVITY 5 *** */
+        boolean a = true;
+        for(Deck i : stacks) {
+            if(i.getSize() == 0) a = false;
+        }
+        if(a) {
+            for(Deck i : stacks) {
+                if(drawPile.getSize() != 0) {
+                    i.addCard(drawPile.remove(0));
+                }
+            }
+        }
     }
 
     /**
      *  Returns true if all stacks and the draw pile are all empty
      */ 
     public boolean isEmpty() {
-        /* *** TO BE IMPLEMENTED IN ACTIVITY 5 *** */
-        return false;
+        for(Deck i : stacks) {
+            if(i.getSize() != 0)  return false;
+        }
+        return drawPile.getSize() == 0;
     }
 
     /**
@@ -61,6 +98,12 @@ public class Board
      * pile, and done stacks (if you chose to have them)
      */
     public void printBoard() {
-        /* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
+        System.out.println("Stacks:");
+        for(int i = 0; i < stacks.length; i++) {
+            System.out.println(i+1 + ": " + stacks[i].toString());
+        }
+        System.out.println();
+        System.out.println("Draw Pile:");
+        System.out.println(drawPile.toString());
     }
 }
