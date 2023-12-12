@@ -6,11 +6,45 @@ public class Checker {
     static SketchPad world = new SketchPad(300, 300);
     static DrawingTool pen = new DrawingTool(world);
     public static void main(String[] args) {
-        Commands cs = new Commands(new Executable[]{new Prisoner()});
-        String name = ((Prisoner)cs.CMDS[0]).name;
-        System.out.println(name);
+        System.out.println(Checker.sumMultiples("0 d d 3 3 xdddd 0"));
+
+        System.out.println(Checker.sumMultiples("Ilov3ap6sO3"));
+        System.out.println(Checker.sumMultiples("jl46sme23ldm"));
+        System.out.println(Checker.sumMultiples("Mdl9dllle4dl"));
+        System.out.println(Checker.sumMultiples("Hi!"));
+    }
+    
+    public static int sumMultiples(String str) {
+        int lastNum = 0, digitPlace = 1;
+        Boolean digitFound = false;
+        for(int i = str.length() - 1; i >= 0; i--) {
+            if(Character.isDigit(str.charAt(i))) {
+                digitFound = true;
+                lastNum += (str.charAt(i)-48) * digitPlace;
+                digitPlace *= 10;
+            }
+            if(!Character.isDigit(str.charAt(i)) && digitFound) {
+                break;
+            }
+        }
+
+        int sum = 0;
+        String currentDigit = "";
+        for(int i = 0; i < str.length(); i++) {
+            if(Character.isDigit(str.charAt(i))) {
+                currentDigit += str.charAt(i);
+            }
+            if(currentDigit != "" && (!Character.isDigit(str.charAt(i)) || i == str.length()-1)) {
+                int currentDigitAsInt = Integer.parseInt(currentDigit);
+                sum += (lastNum != 0 && currentDigitAsInt % lastNum == 0) || (lastNum == 0 && currentDigitAsInt == 0) ? 1 : 0;
+                currentDigit = "";
+            }
+        }
+
+        return sum;
     }
 
+    
     public static interface Executable {
         void execute(String cmd);
     }
