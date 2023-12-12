@@ -106,4 +106,12 @@ public class Board {
         System.out.println("Draw Pile:");
         System.out.println(drawPile.toString());
     }
+    
+    public void catchException() {
+        try {
+            
+        } catch(InputMismatchException e) {
+            System.out.println(e.getMessage());
+        }
+    }
 }
