@@ -6,12 +6,9 @@ public class Checker {
     static SketchPad world = new SketchPad(300, 300);
     static DrawingTool pen = new DrawingTool(world);
     public static void main(String[] args) {
-        System.out.println(Checker.sumMultiples("0 d d 3 3 xdddd 0"));
-
-        System.out.println(Checker.sumMultiples("Ilov3ap6sO3"));
-        System.out.println(Checker.sumMultiples("jl46sme23ldm"));
-        System.out.println(Checker.sumMultiples("Mdl9dllle4dl"));
-        System.out.println(Checker.sumMultiples("Hi!"));
+        String a = "⃤⃯⃝ぐꂌꕨ㊉ ͓ͣ쏫>͓ͣ,w͠҉̚了.̐ꗃꕾ";
+        String b = "⃤⃯⃝ぐꂌꕨ㊉ ͓ͣ쏫>͓ͣ,w͠҉̚了.̐ꗃꕾ";
+        System.out.print(a.equals(b));
     }
     
     public static int sumMultiples(String str) {

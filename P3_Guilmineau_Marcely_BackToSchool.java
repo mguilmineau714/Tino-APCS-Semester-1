@@ -23,8 +23,9 @@ public class P3_Guilmineau_Marcely_BackToSchool {
         CollegeStudent ima = new CollegeStudent("Ima Frosh", 18, "F", "UCB123",   4.0, 1, "English");  
         System.out.println(ima);
     }
-    
-    public static class CollegeStudent extends Student {
+}
+
+ class CollegeStudent extends Student {
         private String myMajor;
         private int myYear;
 
@@ -54,8 +55,7 @@ public class P3_Guilmineau_Marcely_BackToSchool {
             return super.toString() + ", year: " + myYear + ", major: " + myMajor;
         }
     }
-
-    public static class Teacher extends Person {
+ class Teacher extends Person {
         private String mySubject;
         private double mySalary;
 
@@ -85,8 +85,7 @@ public class P3_Guilmineau_Marcely_BackToSchool {
             return super.toString() + ", subject: " + mySubject + ", salary: " + mySalary;
         }
     }
-
-    public static class Student extends Person {
+ class Student extends Person {
         private String myIdNum; // Student Id Number
         private double myGPA; // grade point average
         // constructor
@@ -118,8 +117,7 @@ public class P3_Guilmineau_Marcely_BackToSchool {
             return super.toString() + ", student id: " + myIdNum + ", gpa: " + myGPA;
         }
     }
-
-    public static class Person {
+ class Person {
         private String myName ; // name of the person
         private int myAge; // person's age
         private String myGender; // "M" for male, "F" for female, "NB" for non-binary
@@ -159,4 +157,3 @@ public class P3_Guilmineau_Marcely_BackToSchool {
             myGender;
         }
     }
-}
